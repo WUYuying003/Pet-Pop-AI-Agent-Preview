@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5cc28" />
+    <meta name="description" content="PetPop AI 宠物内容经营 Agent - 无需登录的交互演示" />
+    <title>PetPop · AI 宠物内容经营 Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="showcase">
+      <section class="story-panel" aria-label="产品说明">
+        <div class="brand-lockup">
+          <img src="assets/logo.png" alt="PetPop" />
+          <span>AI NATIVE DEMO</span>
+        </div>
+        <p class="eyebrow">FROM PET TO PERSONAL BRAND</p>
+        <h1>不是多一个 AI 工具，<br />是多一个懂你宠物的<span>内容搭档。</span></h1>
+        <p class="lead">Petty 读取宠物画像、历史内容与平台目标，把“今天发什么”变成一条可解释、可编辑、可持续成长的创作任务。</p>
+
+        <div class="value-grid">
+          <article>
+            <b>01</b>
+            <div><strong>理解宠物</strong><small>外形、性格、擅长场景</small></div>
+          </article>
+          <article>
+            <b>02</b>
+            <div><strong>规划任务</strong><small>根据目标生成今日内容</small></div>
+          </article>
+          <article>
+            <b>03</b>
+            <div><strong>共创并学习</strong><small>人工确认，反馈沉淀画像</small></div>
+          </article>
+        </div>
+
+        <div class="demo-guide">
+          <div class="pulse-dot"></div>
+          <div>
+            <strong>可操作演示</strong>
+            <p>从手机首页点击「开始今日任务」，体验完整 AI 共创闭环。</p>
+          </div>
+        </div>
+
+        <div class="boundary-note">
+          <span>AI 边界</span>
+          <p>只生成建议与草稿，不自动发布；用户始终拥有编辑权与最终决定权。</p>
+        </div>
+      </section>
+
+      <section class="device-stage" aria-label="PetPop 交互演示">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+        <div class="phone">
+          <div class="phone-island"></div>
+          <div class="app" id="app">
+            <header class="statusbar"><span>9:41</span><span>● ◔ ▰</span></header>
+
+            <section class="screen active" data-screen="home">
+              <div class="scroll-content home-content">
+                <div class="topbar">
+                  <div class="mini-logo"><img src="assets/logo.png" alt="" /></div>
+                  <button class="icon-button" aria-label="通知">◔<i></i></button>
+                </div>
+
+                <div class="hello-row">
+                  <div><p>下午好，花卷妈妈</p><h2>今天也让花卷<br />被更多人看见吧！</h2></div>
+                  <img class="avatar" src="assets/huajuan.png" alt="花卷头像" />
+                </div>
+
+                <article class="agent-card">
+                  <div class="agent-head"><span class="agent-icon">✦</span><div><small>PETTY · 今日策略</small><strong>秋日松弛感增长任务</strong></div><span class="tag">12 min</span></div>
+                  <p>花卷的「户外探索家」内容互动率最高。今天建议用旅行自拍强化记忆点。</p>
+                  <div class="reason"><span>为什么推荐</span><b>近 3 条户外内容平均收藏 +26%</b></div>
+                  <button class="primary-action" id="startTask">开始今日任务 <span>→</span></button>
+                </article>
+
+                <div class="section-title"><h3>成长面板</h3><button data-nav="profile">查看画像</button></div>
+                <div class="growth-card">
+                  <div class="level-ring"><div><b>Lv.6</b><small>新锐萌宠</small></div></div>
+                  <div class="growth-copy"><span>本周已完成 4 / 6 个任务</span><div class="progress"><i></i></div><small>再完成 2 个任务，解锁「稳定更新者」</small></div>
+                </div>
+
+                <div class="section-title"><h3>灵感速递</h3><span>为花卷筛选</span></div>
+                <div class="inspiration-row">
+                  <article><img src="assets/mona-cat.png" alt="名画宠物模板" /><span>热点模板</span><strong>如果猫咪也有名画</strong></article>
+                  <article><img src="assets/quick-post.png" alt="图文创作" /><span>一键创作</span><strong>把日常变成故事</strong></article>
+                </div>
+              </div>
+            </section>
+
+            <section class="screen" data-screen="create">
+              <div class="scroll-content create-content">
+                <div class="screen-head"><button class="back-button" data-nav="home">‹</button><div><small>PETTY WORKSPACE</small><h2>今日共创任务</h2></div><button class="more">•••</button></div>
+
+                <div id="creatorEditor">
+                  <article class="task-brief">
+                    <div><span>01</span><p><small>本次目标</small><strong>强化「户外探索家」人设</strong></p></div>
+                    <p>生成一篇适合小红书的秋日旅行图文，突出花卷勇敢、好奇又有点搞笑的性格。</p>
+                  </article>
+
+                  <label class="field-label">发布平台</label>
+                  <div class="choice-row"><button class="choice active"><span class="red-dot">●</span> 小红书</button><button class="choice">抖音</button><button class="choice">Instagram</button></div>
+
+                  <label class="field-label">想要的感觉</label>
+                  <div class="chips" id="toneChips"><button class="active">松弛自然</button><button>轻松搞笑</button><button>治愈电影感</button><button>反差萌</button></div>
+
+                  <label class="field-label">选择素材 <em>已自动筛选 3 张</em></label>
+                  <div class="media-grid"><button class="selected"><img src="assets/huajuan.png" alt="花卷户外照片" /><i>✓</i></button><button class="crop-two"><img src="assets/huajuan.png" alt="花卷户外照片" /><i>✓</i></button><button class="add-media">＋<small>添加</small></button></div>
+
+                  <div class="context-box"><span>✦</span><p><strong>Petty 将使用这些上下文</strong><small>宠物画像 · 过往高互动内容 · 当前平台语气 · 本次任务目标</small></p></div>
+                  <button class="generate-button" id="generateBtn"><span>✦</span> 生成内容方案</button>
+                  <p class="microcopy">预计 8 秒 · 结果可编辑，不会自动发布</p>
+                </div>
+
+                <div class="loading-state" id="loadingState" hidden>
+                  <div class="orbit"><span>✦</span></div>
+                  <h3>Petty 正在为花卷策划…</h3>
+                  <ul><li class="done">理解宠物画像</li><li class="done">匹配平台热门结构</li><li>组合图片与文案</li></ul>
+                </div>
+
+                <div id="creatorResult" hidden>
+                  <div class="result-hero"><img src="assets/huajuan.png" alt="AI 选择的封面" /><span>推荐封面 · 4:5</span><button>更换</button></div>
+                  <div class="result-card">
+                    <div class="result-label"><span>✦ AI 草稿</span><small>基于花卷画像生成</small></div>
+                    <h3>老板说去看草原，没说我要自己当摄影师📷</h3>
+                    <p id="captionText">第一次来到这么大的草原，花卷全程都在认真巡逻。直到发现镜头里的自己——嗯，今天也是很会营业的小猫咪。你家毛孩子旅行时是什么风格？</p>
+                    <p class="hashtags">#猫咪旅行 #宠物也要看世界 #花卷的探险日记</p>
+                    <button class="edit-copy">✎ 编辑文案</button>
+                  </div>
+                  <div class="ai-explain"><span>为什么这样生成？</span><p>使用「反差开场 + 场景故事 + 互动提问」结构；保留花卷的探索家人设，同时避免过度拟人和虚假经历。</p></div>
+                  <div class="result-actions"><button id="regenBtn">↻ 再来一版</button><button class="accept" id="acceptBtn">采用并完成任务</button></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="screen" data-screen="plaza">
+              <div class="scroll-content plaza-content">
+                <div class="screen-head simple"><div><small>EXPLORE</small><h2>灵感广场</h2></div><button class="icon-button">⌕</button></div>
+                <div class="hero-tile"><img src="assets/huajuan.png" alt="旅行主题" /><div><span>本周趋势</span><h3>带毛孩子<br />去看更大的世界</h3><button data-nav="create">用这个灵感创作 →</button></div></div>
+                <div class="filter-tabs"><button class="active">推荐</button><button>模板</button><button>热门话题</button></div>
+                <div class="masonry"><article><img src="assets/mona-cat.png" alt="名画猫咪" /><strong>当猫咪走进名画</strong><small>12.8k 人在用</small></article><article><img src="assets/huajuan.png" alt="旅行猫咪" /><strong>宠物旅行大片</strong><small>本周热度 +42%</small></article><article class="text-tile"><span>内容趋势</span><b>第一人称<br />宠物日记</b><small>让角色感更稳定</small></article></div>
+              </div>
+            </section>
+
+            <section class="screen" data-screen="business">
+              <div class="scroll-content business-content">
+                <div class="screen-head simple"><div><small>GROWTH</small><h2>成长与合作</h2></div><button class="icon-button">↗</button></div>
+                <article class="metric-card dark"><small>花卷 IP 综合潜力</small><strong>82 <em>/ 100</em></strong><div class="metric-row"><span>人设辨识度 <b>88</b></span><span>更新稳定性 <b>76</b></span><span>互动潜力 <b>83</b></span></div></article>
+                <div class="section-title"><h3>Petty 的增长建议</h3><span>每周更新</span></div>
+                <article class="insight-card"><span>01</span><div><strong>固定「旅行自拍」栏目</strong><p>连续发布 3 期，建立花卷的核心视觉记忆。</p></div></article>
+                <article class="insight-card"><span>02</span><div><strong>提高评论区互动</strong><p>用开放式提问代替单向描述，预计互动率提升 12–18%。</p></div></article>
+                <div class="section-title"><h3>合作机会</h3><span>模拟数据</span></div>
+                <article class="opportunity"><div class="opportunity-cover">PET<br />TRIP</div><div><small>品牌邀约 · 旅行用品</small><strong>「和宠物一起出发」内容征集</strong><p>匹配度 91% · 10 月 12 日截止</p></div></article>
+              </div>
+            </section>
+
+            <section class="screen" data-screen="profile">
+              <div class="scroll-content profile-content">
+                <div class="profile-hero"><img src="assets/huajuan.png" alt="花卷" /><div><small>花卷的数字画像</small><h2>户外探索家</h2><p>勇敢 · 好奇 · 反差萌</p></div></div>
+                <div class="profile-score"><div><strong id="profileScore">78%</strong><small>画像完整度</small></div><p>每一次采用、编辑或放弃，都会帮助 Petty 更懂花卷。</p></div>
+                <div class="section-title"><h3>Petty 已学到</h3><button>管理</button></div>
+                <div class="memory-list"><article><span>视觉</span><p><strong>银渐层、圆脸、旅行装备</strong><small>来自 24 张已授权照片</small></p></article><article><span>性格</span><p><strong>好奇但慢热，镜头前有反差感</strong><small>来自问卷与 8 次创作反馈</small></p></article><article><span>表现</span><p><strong>户外内容收藏率最高</strong><small>来自历史内容汇总</small></p></article></div>
+                <div class="privacy-card"><span>🔒</span><div><strong>你的数据由你控制</strong><p>演示版仅使用本地模拟数据，不上传、不存储任何账号信息。</p></div></div>
+              </div>
+            </section>
+
+            <div class="task-sheet" id="taskSheet" aria-hidden="true">
+              <button class="sheet-close" id="closeSheet">×</button>
+              <span class="sheet-kicker">TODAY WITH PETTY</span>
+              <h3>用 12 分钟，完成一条<br />属于花卷的旅行内容</h3>
+              <div class="sheet-flow"><div><b>1</b><p><strong>确认方向</strong><small>目标、平台、表达风格</small></p></div><div><b>2</b><p><strong>AI 生成</strong><small>封面建议、文案与话题</small></p></div><div><b>3</b><p><strong>人工决策</strong><small>编辑、采用并沉淀反馈</small></p></div></div>
+              <button class="primary-action" id="goCreate">和 Petty 一起开始 <span>→</span></button>
+            </div>
+            <div class="sheet-backdrop" id="sheetBackdrop"></div>
+            <div class="toast" id="toast">任务完成，花卷画像已更新 ✦</div>
+
+            <nav class="bottom-nav" aria-label="主导航">
+              <button class="active" data-nav="home"><span>⌂</span><small>首页</small></button>
+              <button data-nav="create"><span>✦</span><small>创作</small></button>
+              <button data-nav="plaza"><span>◫</span><small>广场</small></button>
+              <button data-nav="business"><span>♢</span><small>成长</small></button>
+              <button data-nav="profile"><span>●</span><small>花卷</small></button>
+            </nav>
+          </div>
+        </div>
+        <p class="device-note"><span></span> 无需登录 · 本地模拟数据 · 建议使用手机体验</p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
