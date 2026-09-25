@@ -4,7 +4,7 @@ PetPop 是一个面向普通宠物主的 AI 宠物内容经营 Agent。它基于
 
 ## 在线体验
 
-部署后链接将在此处更新。无需登录，所有内容均为前端模拟数据。
+[打开 PetPop AI 在线演示](https://wuyuying003.github.io/Pet-Pop-AI-Agent-Preview/)。无需登录，所有内容均为前端模拟数据。
 
 推荐体验路径：
 
